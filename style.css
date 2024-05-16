@@ -1,0 +1,197 @@
+
+/* ESTILO GERAL */
+*{
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background-color: #000000;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgba(255, 0, 0, 0.808);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+div.txt-topo-site p{
+    font-size: 26px;
+    margin: 100px 0;
+}
+
+div.txt-topo-site h1{
+    font-size: 28px;
+}
+
+h2.titulo{
+    color: #ffffff;
+    font-size: 38px;
+    text-align: center;
+
+}
+
+h2.titulo span{
+    color: #ff0000;
+}
+/*ESTILO DO CABEÇALHO*/
+header{
+    padding: 60px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: 1s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #ff0000;
+    transform: scale(1.05);
+}
+
+/*ESTILO DO TOPO DO SITE*/
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 27px;
+    line-height: 30px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #ffffff;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar {
+    0%{
+        top: 0;
+
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/*ESTILO DOS NOSSOS SERVIÇOS*/
+section.Serviços{
+    padding: 40px 4%;
+}
+
+section.Serviços .flex{
+    gap: 60px;
+}
+
+.Serviços .serviços-box{
+    color: #fff;
+    padding:  40px;
+    border-radius: 20px;
+    margin-top: 25px;
+    transition: .3s;
+}
+
+.Serviços .serviços-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff00009c;
+}
+
+.Serviços .serviços-box span{
+    font-size: 58px;
+    color: #ff0000;
+}
+
+.Serviços .serviços-box h3{
+    font-size: 29px;
+    margin: 15px 0;
+}
+
+.Serviços .serviços-box p{
+    font-size: 20px;
+}
+
+/*ESTILO DO SOBRE*/
+section.Sobre{
+    padding: 40px 4%;
+}
+
+section.Sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.Sobre .txt-sobre{
+    color: #fff;
+}
+
+.Sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+
+}
+
+.Sobre .txt-sobre h2 span{
+    color: #ff0000;
+    display: block;
+}
+
+.Sobre .txt-sobre p{
+    margin: 10px 0;
+    text-align: justify;
+    font-size: 26px;
+}
